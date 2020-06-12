@@ -12,6 +12,7 @@ public class Fields {
   public static String srcportHdr = "srcport";
   public static String dstportHdr = "dstport";
   public static String tcpseqHdr = "tcpseq";
+  public static String tcpflagsHdr = "tcpflags"; // Added
   public static String protoHdr = "proto";
   public static String inportHdr = "inport";
   public static String outportHdr = "outport";
@@ -34,6 +35,7 @@ public class Fields {
       srcportHdr,
       dstportHdr,
       tcpseqHdr,
+      tcpflagsHdr,
       protoHdr,
       inportHdr,
       outportHdr,

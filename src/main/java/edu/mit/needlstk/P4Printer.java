@@ -43,6 +43,7 @@ public class P4Printer {
     p4Map.put(Fields.srcportHdr,    "srcport");
     p4Map.put(Fields.dstportHdr,    "dstport");
     p4Map.put(Fields.tcpseqHdr,     "seqNo");
+    p4Map.put(Fields.tcpflagsHdr,   "flags"); // Added
     p4Map.put(Fields.protoHdr,      "protocol");
     p4Map.put(Fields.pktpathHdr,    "pktpath");
     p4Map.put(Fields.ingressTin,    "ingress_global_timestamp");
@@ -79,6 +80,7 @@ public class P4Printer {
     p4PrefixMap.put(Fields.srcportHdr,         PKTLOG_METADATA);
     p4PrefixMap.put(Fields.dstportHdr,         PKTLOG_METADATA);
     p4PrefixMap.put(Fields.tcpseqHdr,          HEADERS + TCP_PREFIX);
+    p4PrefixMap.put(Fields.tcpflagsHdr,        STANDARD_TYPECAST + HEADERS + TCP_PREFIX);
     p4PrefixMap.put(Fields.protoHdr,           STANDARD_TYPECAST + HEADERS + IP_PREFIX);
     p4PrefixMap.put(Fields.pktpathHdr,         PKTLOG_METADATA);
     p4PrefixMap.put(Fields.ingressTin,         STANDARD_TYPECAST + INTRINSIC_METADATA);
